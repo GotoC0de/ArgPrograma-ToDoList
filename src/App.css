@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 .search-container {
     display: flex;
     justify-content: center;
@@ -10,4 +11,12 @@
     height: 25px;
     border-radius: 10px;
     border-style: none;
+}
+
+.title {
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    background-color: rgba(194, 194, 194, 0.741);
+    padding: 10px;
+    border-radius: 10px;
 }

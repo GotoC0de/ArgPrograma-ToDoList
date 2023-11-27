@@ -24,6 +24,7 @@ function App() {
 
   return (
     <div className='search-container'>
+      <h1 className='title'>To Do List</h1>
       <TaskForm addTask = {addTask}/>
       <input className='search-task' placeholder='Busca la tarea...' value={search} onChange={handleFilterChange} />
       <TaskList currentTasks = {currentTasks} tasks = {tasks} search = {search} deleteTask = {deleteTask}/>

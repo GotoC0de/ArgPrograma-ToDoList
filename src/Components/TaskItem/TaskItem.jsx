@@ -6,8 +6,8 @@ const TaskItem = ({task, deleteTask}) => {
   return (
     <div className='task-item'>
         <h3>{task.title}</h3>
-        <p>{task.description}</p>
-        <span>{task.createAt}</span>
+        <p>Descripción: {task.description}</p>
+        <span>Creacion: {task.createAt}</span>
         <button className='btn-item' onClick={ () => deleteTask(task.id)}>Finalizar</button>
     </div>
   )
