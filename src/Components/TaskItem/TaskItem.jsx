@@ -8,9 +8,7 @@ const TaskItem = ({task, deleteTask}) => {
         <h3>{task.title}</h3>
         <p>{task.description}</p>
         <span>{task.createAt}</span>
-        <button style={{
-          height = '30px'
-        }} className='btn-item' onClick={ () => deleteTask(task.id)}>Finalizar</button>
+        <button className='btn-item' onClick={ () => deleteTask(task.id)}>Finalizar</button>
     </div>
   )
 }
