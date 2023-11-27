@@ -29,16 +29,16 @@ const TaskForm = ({addTask}) => {
     }
 
   return (
-    <div>
+    <div className='form-container'>
         
-        <button onClick={openModal}>Nueva Tarea <CiSquarePlus/></button>
+        <button className='btn-task' onClick={openModal}>Nueva Tarea <CiSquarePlus className='icon-task'/></button>
         {isOpen && (
             <div className='modal-background'>
                 <div className='modal'>
                     <h2>Crea una nueva tarea</h2>
                     <form onSubmit={handleSubmitTask}>
                         <div className="input-container">
-                            <label htmlFor="title">Ingrese un titulo:</label>
+                            <label htmlFor="title">Titulo:</label>
                             <input type="text" id='title' name='title' placeholder='Titulo ejemplo'/>
                         </div>
     

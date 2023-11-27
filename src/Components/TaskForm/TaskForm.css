@@ -12,7 +12,8 @@
 }
 
 .modal {
-    background-color: whitesmoke;
+    color: white;
+    background-color: rgb(43, 43, 43);
     padding: 15px;
     border-radius: 15px;
 }
@@ -37,4 +38,33 @@
 .controls-form {
     display: flex;
     justify-content: space-between;
+}
+
+.controls-form>button{
+    padding: 10px 30px;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.122);    
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: rgb(55, 55, 55);
+    color: white;
+}
+
+.btn-task {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border: none;
+    background: black;
+    color: white;
+    padding: 12px 23px;
+    border-radius: 10px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.btn-task>.icon-task{
+    font-size: 28px;
+    margin-left: 15px;
 }

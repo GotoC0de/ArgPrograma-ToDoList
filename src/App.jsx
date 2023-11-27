@@ -23,11 +23,11 @@ function App() {
   }, [search, tasks])
 
   return (
-    <>
-      <input placeholder='Busca la tarea...' value={search} onChange={handleFilterChange} />
+    <div className='search-container'>
       <TaskForm addTask = {addTask}/>
+      <input className='search-task' placeholder='Busca la tarea...' value={search} onChange={handleFilterChange} />
       <TaskList currentTasks = {currentTasks} tasks = {tasks} search = {search} deleteTask = {deleteTask}/>
-    </>
+    </div>
   )
 }
 
