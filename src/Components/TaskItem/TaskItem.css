@@ -1,6 +1,7 @@
 .task-item {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     width: 30%;
     height: 30%;
@@ -9,5 +10,6 @@
     border-radius: 20px;
     padding: 5px;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0,6);}
+    background-color: rgba(0, 0, 0, 0.232);
+    color: white;
 }
