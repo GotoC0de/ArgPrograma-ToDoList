@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
 import { CiSquarePlus } from "react-icons/ci";
@@ -31,19 +32,19 @@ const TaskForm = ({addTask}) => {
   return (
     <div className='form-container'>
         
-        <button className='btn-task' onClick={openModal}>Nueva Tarea <CiSquarePlus className='icon-task'/></button>
+        <button className='btn-task' onClick={openModal}>Crear <CiSquarePlus className='icon-task'/></button>
         {isOpen && (
             <div className='modal-background'>
                 <div className='modal'>
                     <h2>Crea una nueva tarea</h2>
                     <form onSubmit={handleSubmitTask}>
                         <div className="input-container">
-                            <label htmlFor="title">Titulo:</label>
-                            <input type="text" id='title' name='title' placeholder='Titulo ejemplo'/>
+                            <label htmlFor="title" style={{fontSize: '30px'}}>Titulo:</label>
+                            <input style={{marginLeft: '115px'}} type="text" id='title' name='title' placeholder='Titulo ejemplo'/>
                         </div>
     
                         <div className="input-container">
-                            <label htmlFor="description">Ingrese una descripción:</label>
+                            <label htmlFor="description" style={{fontSize: '18px'}}>Ingrese una descripción:</label>
                             <textarea name="description" id="description"></textarea>
                         </div>
     
@@ -51,7 +52,7 @@ const TaskForm = ({addTask}) => {
                             <button role='button' type='button' onClick={closeModal}>Cancelar</button>
                             <button type='submit'>Confirmar</button>
                         </div>
-                    </form>
+                    </form> 
                 </div>
     
             </div>
