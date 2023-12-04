@@ -44,7 +44,7 @@ const TaskForm = ({addTask}) => {
     
                         <div className="input-container">
                             <label htmlFor="description">Ingrese una descripción:</label>
-                            <textarea name="description" id="description"></textarea>
+                            <textarea name="description" id="description" placeholder='Ingrese Descripción'></textarea>
                         </div>
     
                         <div className='controls-form'>

@@ -16,28 +16,56 @@
     background-color: rgb(43, 43, 43);
     padding: 15px;
     border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .modal>form {
     display: flex;
     gap: 20px;
     flex-direction: column;
-    width: 30vw;
+    width: 35vw;
 }
+
 
 .modal>form>.input-container{
     display: flex;
     gap: 10px;
     flex-direction: column;
+    align-items: center;
+}
+
+.modal>form>.input-container>input {
+    width: 60%;
 }
 
 .modal>form>.input-container>textarea {
     height: 180px;
+    width: 80%;
 }
+
+@media (max-width:750px) {
+
+   .modal>form>.input-container>textarea {
+    height: 100px;
+    width: 200px;
+
+    }
+    .modal>form {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        width: 45vw;
+    }
+
+}
+
+
 
 .controls-form {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .controls-form>button{
@@ -47,7 +75,7 @@
     border: 1px solid rgba(255, 255, 255, 0.122);    
     border-radius: 10px;
     text-decoration: none;
-    background-color: rgb(55, 55, 55);
+    background-color: #1E6F9F;
     color: white;
 }
 
@@ -56,10 +84,10 @@
     cursor: pointer;
     align-items: center;
     border: none;
-    background: black;
+    background: #1E6F9F;
     color: white;
     padding: 12px 23px;
-    border-radius: 10px;
+    border-radius: 8px;
     margin: 5px;
     text-decoration: none;
 }
